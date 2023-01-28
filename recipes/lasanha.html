@@ -10,29 +10,83 @@
             font-family: 'Birds';
             src: url('Birds of Paradise ╕ PERSONAL USE ONLY.ttf');
         }
-        h1 {
-            font-family: 'Birds';
+        div#back {
+            display: flex;
+
+        }
+        a {
+            color:gray;
+            position: absolute;
+            max-width: max-content;
+            margin: 20px;
+            text-decoration: none;
+        }
+        h4#volt {
+            border-radius: 10px;
+            background-color: rgb(216, 123, 36);
+            padding: 5px 10px;
+
+        }
+        h4#volt:hover {
+            color: white;
+            box-shadow: 0px 0.5px 2px black;    
         }
 
+        h1 {
+            font-family: 'Birds';
+            width: 100%;
+            text-align: center;
+        }
+
+        h3, h4, li, p {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h3 {
+            background-color: rgba(238, 193, 110, 0.993);
+        }
+
+        h4 {
+            margin: 0 20px 0 0;
+            background-color: rgb(221, 221, 221);
+        }
+        
         body {
             display: flex;
-            align-items: center;
+            justify-content: center;
             margin: 0 auto;
             padding: 0;
             max-width: 100vmax;
         }
 
-        div#main {
-            column-count: 1;
-            max-width: 60%;
+        ul {
+            padding-left: 0;
         }
-        div.oui {
+
+        li {
+            list-style-type: none;
+        }
+        
+        #main {            
+            column-count: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div.oui#ingred {
             margin: 0 auto;
-            max-width: fit-content;
+            max-width: 60%;
         }
 
         img#lasan {
-
+            padding: 0;
+            margin: 0;
             width: 100vw;
             height: 100px;
             object-fit: cover;
@@ -43,11 +97,19 @@
 <body>
     <div id="main">
         
-        <h1>Lasanha</h1>
-        
+        <div id="back">
+            <a href="../index.html" id="link">
+
+                <h4 id="volt">← Voltar</h4>
+            
+            </a>
+
+            <h1>Lasanha</h1>
+        </div>
+
         <img id="lasan" src="image/lasanha1.jpg" alt="lasanha">
 
-        <div class="oui">
+        <div id='ingred' class="oui">
             <h3>Ingredientes</h3>
             <ul>
                 <li>500 g de massa de lasanha</li>
@@ -65,48 +127,44 @@
                 <li>3 dentes de alho amassados</li>
                 <li>1 pacote de queijo ralado</li>
             </ul>
-        </div>
-        <div class="oui">
             <h3>Modo de Preparo</h3>
-            <div>
-                <h4>Lasanha</h4>
-                <p>
-                    Cozinhe a massa segundo as orientações do fabricante,
-                    despeje em um refratário com água gelada para não grudar e reserve.
-                </p>
+            <h4>Lasanha</h4>
+            <p>
+                Cozinhe a massa segundo as orientações do fabricante,                    despeje em um refratário com água gelada para não grudar e reserve.
+            </p>
                 
-                <h4>Molho a Bolonhesa</h4>
-                <p>
-                    Refogue o alho, a cebola, a carne moída, o molho de tomate,
-                    deixe cozinhar por 3 minutos e reserve.
-                </p>
+            <h4>Molho a Bolonhesa</h4>
+            <p>
+                Refogue o alho, a cebola, a carne moída, o molho de tomate,
+                deixe cozinhar por 3 minutos e reserve.
+            </p>
 
-                <h4>Molho Branco</h4>
-                <p>
-                    Derreta a margarina, coloque as 3 colheres 
-                    de farinha de trigo e mexa.
-                    <br>
-                    Despeje o leite aos poucos e continue
-                    mexendo.
-                    <br>
-                    Por último, coloque o creme de leite,
-                    mexa por 1 minuto e desligue o fogo.
-                </p>
+            <h4>Molho Branco</h4>
+            <p>
+                Derreta a margarina, coloque as 3 colheres 
+                de farinha de trigo e mexa.
+            <br><br>
+                Despeje o leite aos poucos e continue
+                mexendo.
+            <br><br>
+                Por último, coloque o creme de leite,
+                mexa por 1 minuto e desligue o fogo.
+            </p>
 
-                <h4>Montagem</h4>
-                <p>
-                    Despeje uma parte do molho à bolonhesa em um refratário, 
-                    a metade da massa, a metade do presunto, a metade da mussarela, 
-                    todo o molho branco e o restante da massa.
-                    <br>
-                    Repita as camadas até a borda do recipiente.
-                    <br>
-                    Finalize com o queijo ralado e leve ao forno 
-                    alto (220° C), preaquecido, por cerca de 20 minutos.
-                </p>
+            <h4>Montagem</h4>
+            <p>
+                Despeje uma parte do molho à bolonhesa em um refratário, 
+                a metade da massa, a metade do presunto, a metade da mussarela, 
+                todo o molho branco e o restante da massa.
+            <br><br>
+                Repita as camadas até a borda do recipiente.
+            <br><br>
+                Finalize com o queijo ralado e leve ao forno 
+                alto (220° C), preaquecido, por cerca de 20 minutos.
+            </p>
 
-            </div>
         </div>
-    </div>    
+    </div>
+    
 </body>
 </html>

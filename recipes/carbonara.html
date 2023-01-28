@@ -10,59 +10,140 @@
             font-family: 'Birds';
             src: url('Birds of Paradise ╕ PERSONAL USE ONLY.ttf');
         }
-        h1 {
-            font-family: 'Birds';
-        }
-        html{
+
+        div#back {
             display: flex;
-            justify-content: center;
+
+        }
+        a { 
+            color: gray;
+            position: absolute;
+            max-width: max-content;
+            margin: 20px;
+            text-decoration: none;
         }
 
+        h4#volt {
+            border-radius: 10px;
+            background-color: rgb(216, 123, 36);
+            padding: 5px 10px;
+
+        }
+        h4#volt:hover {
+            color: white;
+            box-shadow: 0px 0.5px 2px black;    
+        }
+
+        h1 {
+            font-family: 'Birds';
+            width: 100%;
+            text-align: center;
+        }
+
+        h3, h4, li, p {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h3 {
+            background-color: rgba(238, 193, 110, 0.993);
+        }
+
+        h4 {
+            margin: 0 20px 0 0;
+            background-color: rgb(221, 221, 221);
+        }
+        
         body {
             display: flex;
-            align-items: center;
-            margin: 0;
+            justify-content: center;
+            margin: 0 auto;
             padding: 0;
+            max-width: 100vmax;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+        
+        #main {            
+            column-count: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div#ingred {
+            margin: 0 auto;
             max-width: 60%;
         }
-        div#main {
-            max-width: 80%;
+
+        img#carb {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100px;
+            object-fit: cover;
+
         }
     </style>
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Carbonara</h1>
-    <div>
-        <h3>Ingredientes</h3>
-        <ul>
-            <li>Bacon picado a gosto</li>
-            <li>Queijo ralado a gosto</li>
-            <li>3 ovos</li>
-            <li>Sal</li>
-            <li>Pimenta-do-reino a gosto</li>
-            <li>Macarrão de sua escolha (espaguete, fusili,etc.)</li>
-            <li>Creme de leite se quiser dar um toque diferente à receita</li>
-        </ul>
+    <div id="main">
+        
+        <div id="back">
+            <a href="../index.html" id="link">
+
+                <h4 id="volt">← Voltar</h4>
+            
+            </a>
+
+            <h1>Carbonara</h1>
+        
+        </div>
+
+        <img id="carb" src="image/classic-homemade-carbonara-pasta-with-pancetta-egg-hard-parmesan-cheese-and-cream-sauce.jpg" alt="carbonara">
+        
+        <div id="ingred">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Bacon picado a gosto</li>
+                <li>Queijo ralado a gosto</li>
+                <li>3 ovos</li>
+                <li>Sal</li>
+                <li>Pimenta-do-reino a gosto</li>
+                <li>Macarrão de sua escolha (espaguete, fusili,etc.)</li>
+                <li>Creme de leite se quiser dar um toque diferente à receita</li>
+            </ul>
+            <h3>Modo de Preparo</h3>
+            <p>
+                Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado).
+                <br><br>
+                Coloque o macarrão para cozinhar em água e sal.
+                <br><br>
+                No refratário onde será servido o macarrão, bata bem os ovos com um garfo.
+                <br><br>
+                Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.
+                <br><br>
+                Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.
+                <br><br>
+                O calor da massa cozinha os ovos.
+                <br><br>
+                Coloque o bacon, ainda quente, sobre o macarrão e sirva.
+            </p>
+        </div>
+
     </div>
-    <div>
-        <h3>Modo de Preparo</h3>
-        <p>
-            Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado).
-            <br>
-            Coloque o macarrão para cozinhar em água e sal.
-            <br>
-            No refratário onde será servido o macarrão, bata bem os ovos com um garfo.
-            <br>
-            Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.
-            <br>
-            Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.
-            <br>
-            O calor da massa cozinha os ovos.
-            <br>
-            Coloque o bacon, ainda quente, sobre o macarrão e sirva.
-        </p>
-    </div>
+    
     
 </body>
 </html>
